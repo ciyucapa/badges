@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import Button from '@material-ui/core/Button';
 
 const ButtonField = (props) => (
-    <button onClick={props.onClick} disabled={props.isValidForm}>
+    <Button onClick={props.onClick} disabled={props.isValidForm}>
         {props.title}
-    </button>
+    </Button>
 );
 
 ButtonField.propTypes = {

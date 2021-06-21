@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import TextField from '@material-ui/core/TextField';
 
 const InputField = (props) => {
     const onChange = (event) => {
         props.changeValue(event.target.value);
     };
     return (
-        <input
+        <TextField
             {...props}
             onChange={onChange}
         />
@@ -20,7 +21,7 @@ InputField.propTypes = {
 };
 
 InputField.defaultProps = {
-    type: 'text',
+    type: "text",
     value: '',
     placeholder: '',
     changeValue: () => {},

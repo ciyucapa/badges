@@ -11,3 +11,9 @@ export const Assents = {
     badgeHeader,
     platziConfLogo,
 }
+
+export const FontSize = {
+    small: 10,
+    normal: 12,
+    large: 16,
+};

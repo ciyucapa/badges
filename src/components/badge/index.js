@@ -18,7 +18,7 @@ const Badge = (props) => (
         <div className="badge__info">
             <div>Soy {props.profession}</div>
             <div>{props.email}</div>
-            <div>{props.twitter}</div>
+            <div>@{props.twitter}</div>
         </div>
         <div className="badge__footer">#platziConfs</div>
     </div>

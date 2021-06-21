@@ -6,39 +6,54 @@ import ButtonField from "../commons/buttonField";
 const Form = (props) => (
     <div>
         <h1>Rellenar</h1>
-        <div>
+        <div style={{marginBottom:"10px"}} >
             <InputField
-                placeholder="Nombres completos"
+                type="text"
                 value={props.name}
                 changeValue={props.changeName}
+                id="outlined-basic"
+                label="Nombres Completos"
+                variant="outlined"
+                size="small"
             />
         </div>
-        <div>
+        <div style={{marginBottom:"10px", marginTop:"10px"}}>
             <InputField
-                placeholder="Correo eléctronico"
                 type="email"
                 value={props.email}
                 changeValue={props.changeEmail}
+                id="outlined-basic"
+                label="Correo Eléctronico"
+                variant="outlined"
+                size="small"
             />
         </div>
-        <div>
+        <div style={{marginBottom:"10px", marginTop:"10px"}}>
             <InputField
-                placeholder="Cual es tu profesión"
                 value={props.profession}
                 changeValue={props.changeProfession}
+                id="outlined-basic"
+                label="Cual es tu profesión"
+                variant="outlined"
+                size="small"
             />
         </div>
-        <div>
+        <div style={{marginTop:"10px"}}>
             <InputField
-                placeholder="Cual es tu red social"
                 value={props.redSocial}
                 changeValue={props.changeRedSocial}
+                id="outlined-basic"
+                label="Cual es tu red social"
+                variant="outlined"
+                size="small"
             />
         </div>
         <ButtonField
             title="Enviar"
             onClick={props.clickForm}
             isValidForm={!props.isValidForm}
+            variant="contained"
+            color="primary"
         />
     </div>
 );
