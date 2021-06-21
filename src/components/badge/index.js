@@ -13,12 +13,12 @@ const Badge = (props) => (
         </div>
         <Box display="flex">
             <img src={Assents.avatar} alt="avatar" className="badge__avatar"/>
-            <h1>{props.name}</h1>
+            <h1>{props.name} Cindy Caceres</h1>
         </Box>
         <div className="badge__info">
-            <div>Soy {props.profession}</div>
-            <div>{props.email}</div>
-            <div>@{props.twitter}</div>
+            <div>Soy {props.profession} Desarrolladora Fronted</div>
+            <div>{props.email}cindycaceres134@gmail.com</div>
+            <div>@{props.twitter}cindycaceres134</div>
         </div>
         <div className="badge__footer">#platziConfs</div>
     </div>

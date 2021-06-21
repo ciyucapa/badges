@@ -1,11 +1,7 @@
 import FountError from "../components/fountError";
 
 const Error = () => {
-    return (
-        <div>
-            <FountError/>
-        </div>
-    )
+    return <FountError/>
 }
 
 export default Error;

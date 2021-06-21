@@ -1,9 +1,10 @@
+import Header from "../components/header";
+
 const BadgeNew = () => {
     return (
         <div>
-            <div>
-                <h1>HOLA SOY PAGE</h1>
-            </div>
+            <Header/>
+            <h1>HOLA SOY PAGE</h1>
         </div>
     )
 }

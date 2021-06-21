@@ -1,5 +1,8 @@
+import {Assents} from '../../resources/assents';
 const FountError = () => (
-    <h1>ERROR 404</h1>
+    <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+        <img src={Assents.error} alt="Error" />
+    </div>
 );
 
 export default FountError;

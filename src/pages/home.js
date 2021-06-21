@@ -1,7 +1,11 @@
+import Badge from "../components/badge";
+import BadgeForm from "../components/badgeForm";
+
 const Home = () => {
     return (
-        <div>
-            <h1>HOME</h1>
+        <div style={{display:"flex", justifyContent:"space-around"}}>
+            <Badge />
+            <BadgeForm />
         </div>
     )
 }
