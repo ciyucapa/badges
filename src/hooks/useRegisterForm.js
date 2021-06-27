@@ -1,6 +1,6 @@
 import {useState, useMemo, useCallback} from 'react';
 
-const useBadgeForm = () => {
+const useRegisterForm = () => {
     const [name, changeName] = useState('');
     const [email, changeEmail] = useState('');
     const [profession, changeProfession] = useState('');
@@ -12,7 +12,7 @@ const useBadgeForm = () => {
 
     const clickForm = useCallback(async () => {
 
-    }, [email, name, profession, redSocial]);
+    }, []);
 
     return {
         name,
@@ -28,4 +28,4 @@ const useBadgeForm = () => {
     };
 };
 
-export default useBadgeForm;
+export default useRegisterForm;

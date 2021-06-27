@@ -1,11 +1,16 @@
-import Badge from "../components/badge";
-import BadgeForm from "../components/badgeForm";
+import Badge from '../components/badge';
+import Header from '../components/header';
+
+import useCharacter from "../hooks/useCharacter";
 
 const Home = () => {
+    const hook = useCharacter();
     return (
-        <div style={{display:"flex", justifyContent:"space-around"}}>
-            <Badge />
-            <BadgeForm />
+        <div>
+            <Header />
+            <div style={{display:"flex", flexDirection:"row", flexWrap:"wrap", backgroundColor:"red"}}>
+                <Badge {...hook} />
+            </div>
         </div>
     )
 }

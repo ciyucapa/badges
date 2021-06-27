@@ -4,20 +4,20 @@ import {
     Route,
 } from 'react-router-dom';
 
-import Badge from "../pages/badge";
-import BadgeNew from "../pages/badgeNew";
-import Error from "../pages/error";
+import RegisterPage from '../pages/registerPage';
+import LoginPage from '../pages/loginPage';
+import Error from '../pages/error';
 import Home from '../pages/home';
-import Layout from "../components/layout";
+import Layout from '../components/layout';
 
 const App = () => (
       <Router>
           <Layout>
               <Switch>
                   <Route exact path="/" component={Home} />
-                  <Route exact path="/badges" component={Badge} />
-                  <Route exact path="/badges/new" component={BadgeNew} />
                   <Route path="/error" component={Error} />
+                  <Route path="/login" component={LoginPage} />
+                  <Route path="/register" component={RegisterPage} />
               </Switch>
           </Layout>
       </Router>

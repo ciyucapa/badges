@@ -1,6 +1,6 @@
 import Navbar from "./components/navbar";
 import Badge from "./components/badge";
-import BadgeForm from "./components/badgeForm";
+import BadgeForm from "./components/register";
 
 function App() {
   return (

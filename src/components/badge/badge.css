@@ -4,6 +4,7 @@
     border-radius: 8px 8px 8px 8px;
     overflow: hidden;
     height: 380px;
+    margin: 20px 20px;
 }
 
 .badge__avatar {
@@ -22,14 +23,19 @@
 }
 
 .badge__footer {
+    background-color: #98CA3F;
     height: 54px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #98CA3F;
+    color: antiquewhite;
     font-weight: bold;
     font-style: italic;
 }
+    .badge__footer--item {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
 
 .badge__info {
     display: flex;

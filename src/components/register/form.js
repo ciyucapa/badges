@@ -55,6 +55,7 @@ const Form = (props) => (
             variant="contained"
             color="primary"
         />
+        <div>¿No tienes cuenta?</div>
     </div>
 );
 
